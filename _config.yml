@@ -1,0 +1,38 @@
+###########
+# site.title
+
+title:    'Book Report.'
+subtitle: 'by Michael Champlin'
+description: >- # this means to ignore newlines until "baseurl:"
+  Write a description to go here.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: mjchamplin
+github_username:  mjchamplin
+email: mjchamplin@gmail.com
+
+nav:
+- { title: 'Welcome',              href: '/' }
+- { title: 'Page Two',             href: '/two.html' }
+- { title: 'Page Three',           href: '/three.html' }
+- { title: 'Questions? Comments?', href: 'http://groups.google.com/group/wwwmake' }
+- { title: 'About',                href: 'https://github.com/henrythemes/jekyll-starter-theme-v2' }
+
+
+#########################
+# more settings
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+exclude:
+- README.md
+- LICENSE.md
+- Gemfile
+- Gemfile.lock

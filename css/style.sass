@@ -1,0 +1,57 @@
+---
+---
+
+@import reset
+@import settings
+@import typography
+@import et-book.css
+
+body
+  background: #fff
+main#content
+  float: left
+  max-width: 500px
+
+section
+  margin-top: 2.5em
+
+sidebar
+  max-width: 284px
+  float: left
+  margin-left: 40px
+
+footer
+  width: 100%
+  text-align: center
+  padding: 2em
+  background-color: #f4f4f4
+  color: $navy
+
+#container
+  max-width: 944px
+  margin: 100px auto
+  padding: 20px 60px
+  background: white
+  @media only screen and (max-width : 824px)
+    margin: 0 auto
+    padding: 2em
+
+#header
+  padding: 0.875em 0
+  border-bottom: 4px solid $off-black
+  a, a:visited
+    color: $off-black
+  @media only screen and (max-width : 824px)
+    padding: 0
+
+
+
+#nav
+  padding: 6px
+
+.highlight
+  h1
+    border-bottom: 2px solid $red
+
+.clear
+  overflow: auto

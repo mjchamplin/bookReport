@@ -1,0 +1,151 @@
+// Typographic Styles
+
+body
+ font-family: $serif
+ color: $off-black
+
+h1,h3,h4,.big
+  font-family: $sans-serif
+h2
+  font-size: 1.75em
+  font-weight: bold
+  display: inline-block
+h1
+  font-size: 1.75em
+  display: inline-block
+  width: 100%
+  @media only screen and (min-width : 824px)
+    padding-bottom: 0.375em
+    border-bottom: 2px solid #ccc
+h2,h3
+  margin: 0 0 .25em
+  a, a:visited
+    color: $off-black
+    transition: color .3s
+  a:hover
+    color: $red
+h3
+  font-size: 1em
+
+p
+  font-size: 1.1875em
+  margin: 0 0 1em
+  line-height: 1.375em
+
+a, a:visited
+  color: $off-black
+  //text-decoration: none
+  //font-weight: bold
+  transition: color .3s
+a:hover
+ color: $red
+
+h1 a,h2 a,h3 a,h4 a,.big a
+  text-decoration: none
+
+pre, code
+  font-family: $pre
+  background-color: #f6f6f6
+  font-size: .85em
+  padding: .2em
+  display: inline-block
+
+ul
+  list-style-type: none
+  padding-left: 0
+  li
+    padding: .3125em .625em
+    border-bottom: 1px solid #ccc
+  li:nth-child(even)
+    background: #F6F6F6
+  li:last-child
+    border-bottom: none
+
+.quote
+  border-top: 1px solid #ddd
+  border-bottom: 1px solid #ddd
+  margin: 2rem 2rem
+  padding: 1em 0
+  font-size: 1.5em
+  line-height: 2rem
+  @media only screen and (min-width : 824px)
+    font-size: 1.75em
+    line-height: 2.25rem
+    margin: 2rem 6rem
+
+.book-author
+  font-style: italic
+  font-size: 1.125em
+  display: block
+  margin-bottom: .625em
+  @media only screen and (min-width : 824px)
+    display: inline-block
+.post-date
+  font-size: 1.125em
+  margin-bottom: .125em
+  display: block
+.post-excerpt
+  p
+    display: inline
+a.flourish
+  text-decoration: none
+
+#header .big
+  font-size: 2.5em
+  font-weight: 800
+  display: block
+  @media only screen and (min-width : 824px)
+    display: inline-block
+    font-size: 5.25em
+
+#header .small
+  font-family: $serif
+  font-size: 1.25em
+  padding: 0
+  font-style: italic
+  display: block
+  margin: 0 0 .375em
+  @media only screen and (min-width : 824px)
+    padding-left: 15px
+    display: inline-block
+    margin: 0
+
+body.post
+  h1
+    font-size: 2.25em
+    font-family: $serif
+    font-weight: bold
+    border: none
+    margin: 1.5rem 0 0
+    @media only screen and (min-width : 824px)
+      font-size: 4em
+      padding: 0
+      margin: 2.5rem 0 0
+  #header .big
+    font-size: 1.75em
+  #header .small
+    font-size: 1.0625em
+    @media only screen and (max-width: 824px)
+      display: none
+  #header
+    padding: .875em 0 .25em
+    border-bottom: 4px solid $red
+  .book-author
+    margin: 0
+  main#post-content
+    p
+      font-size: 1.25em
+      line-height: 1.875rem
+    p:first-of-type
+      margin-top: 2rem
+      @media only screen and (min-width : 824px)
+        font-size: 1.75em
+        line-height: 2.25rem
+    @media only screen and (max-width: 824px)
+      p:first-of-type::first-line
+        text-transform: uppercase
+
+    .end-sign
+      margin-top: .5em
+      font-size: 2em
+      color: $navy
