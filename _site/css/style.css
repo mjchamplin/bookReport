@@ -1,0 +1,296 @@
+@import url(et-book.css);
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "et-book", serif;
+  color: #363535;
+}
+
+h1, h3, h4, .big {
+  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 1.75em;
+  display: inline-block;
+  width: 100%;
+}
+@media only screen and (min-width: 824px) {
+  h1 {
+    padding-bottom: 0.375em;
+    border-bottom: 2px solid #ccc;
+  }
+}
+
+h2, h3 {
+  margin: 0 0 0.25em;
+}
+h2 a, h2 a:visited, h3 a, h3 a:visited {
+  color: #363535;
+  transition: color 0.3s;
+}
+h2 a:hover, h3 a:hover {
+  color: #C95639;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1.1875em;
+  margin: 0 0 1em;
+  line-height: 1.375em;
+}
+
+a, a:visited {
+  color: #363535;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #C95639;
+}
+
+h1 a, h2 a, h3 a, h4 a, .big a {
+  text-decoration: none;
+}
+
+pre, code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  background-color: #f6f6f6;
+  font-size: 0.85em;
+  padding: 0.2em;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul li {
+  padding: 0.3125em 0.625em;
+  border-bottom: 1px solid #ccc;
+}
+ul li:nth-child(even) {
+  background: #F6F6F6;
+}
+ul li:last-child {
+  border-bottom: none;
+}
+
+.quote {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 2rem 2rem;
+  padding: 1em 0;
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+@media only screen and (min-width: 824px) {
+  .quote {
+    font-size: 1.75em;
+    line-height: 2.25rem;
+    margin: 2rem 6rem;
+  }
+}
+
+.book-author {
+  font-style: italic;
+  font-size: 1.125em;
+  display: block;
+  margin-bottom: 0.625em;
+}
+@media only screen and (min-width: 824px) {
+  .book-author {
+    display: inline-block;
+  }
+}
+
+.post-date {
+  font-size: 1.125em;
+  margin-bottom: 0.125em;
+  display: block;
+}
+
+.post-excerpt p {
+  display: inline;
+}
+
+a.flourish {
+  text-decoration: none;
+}
+
+#header .big {
+  font-size: 2.5em;
+  font-weight: 800;
+  display: block;
+}
+@media only screen and (min-width: 824px) {
+  #header .big {
+    display: inline-block;
+    font-size: 5.25em;
+  }
+}
+
+#header .small {
+  font-family: "et-book", serif;
+  font-size: 1.25em;
+  padding: 0;
+  font-style: italic;
+  display: block;
+  margin: 0 0 0.375em;
+}
+@media only screen and (min-width: 824px) {
+  #header .small {
+    padding-left: 15px;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+body.post h1 {
+  font-size: 2.25em;
+  font-family: "et-book", serif;
+  font-weight: bold;
+  border: none;
+  margin: 1.5rem 0 0;
+}
+@media only screen and (min-width: 824px) {
+  body.post h1 {
+    font-size: 4em;
+    padding: 0;
+    margin: 2.5rem 0 0;
+  }
+}
+body.post #header .big {
+  font-size: 1.75em;
+}
+body.post #header .small {
+  font-size: 1.0625em;
+}
+@media only screen and (max-width: 824px) {
+  body.post #header .small {
+    display: none;
+  }
+}
+body.post #header {
+  padding: 0.875em 0 0.25em;
+  border-bottom: 4px solid #C95639;
+}
+body.post .book-author {
+  margin: 0;
+}
+body.post main#post-content p {
+  font-size: 1.25em;
+  line-height: 1.875rem;
+}
+body.post main#post-content p:first-of-type {
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 824px) {
+  body.post main#post-content p:first-of-type {
+    font-size: 1.75em;
+    line-height: 2.25rem;
+  }
+}
+@media only screen and (max-width: 824px) {
+  body.post main#post-content p:first-of-type::first-line {
+    text-transform: uppercase;
+  }
+}
+body.post main#post-content .end-sign {
+  margin-top: 0.5em;
+  font-size: 2em;
+  color: #2b3a3a;
+}
+
+body {
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+main#content {
+  float: left;
+  max-width: 500px;
+}
+
+section {
+  margin-top: 2.5em;
+}
+
+sidebar {
+  max-width: 284px;
+  float: left;
+  margin-left: 40px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+  background-color: #f4f4f4;
+  color: #2b3a3a;
+}
+
+#container {
+  max-width: 944px;
+  margin: 100px auto;
+  padding: 20px 60px;
+  background: white;
+}
+@media only screen and (max-width: 824px) {
+  #container {
+    margin: 0 auto;
+    padding: 2em;
+  }
+}
+
+#header {
+  padding: 0.875em 0;
+  border-bottom: 4px solid #363535;
+}
+#header a, #header a:visited {
+  color: #363535;
+}
+@media only screen and (max-width: 824px) {
+  #header {
+    padding: 0;
+  }
+}
+
+#nav {
+  padding: 6px;
+}
+
+.highlight h1 {
+  border-bottom: 2px solid #C95639;
+}
+
+.clear {
+  overflow: auto;
+}
